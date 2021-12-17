@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mahathir Sadman</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+      }
+
+      a {
+        color: rgb(39, 39, 39);
+        text-decoration: none;
+        font-size: 2rem;
+      }
+      ul {
+        margin-top: 200px;
+      }
+      li {
+        margin-top: 20px;
+        transition: 0.7s;
+      }
+      li:hover {
+        transform: scale(1.5);
+      }
+
+      h1 {
+        text-align: center;
+        background-color: rgb(7, 38, 105);
+        font-family: Lucida Handwriting;
+        color: rgb(255, 255, 255);
+      }
+      p {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      button {
+        padding: 10px;
+        color: white;
+        border: 0;
+        border-radius: 10px;
+        background-color: rgb(0, 64, 176);
+      }
+      input {
+        border-radius: 10px;
+        height: 30px;
+        width: 20%;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Triangle Page</h1>
+    <form action="/triangle" method="post">
+      <br /><br />
+      <div>
+        <label for="height">Height: </label>
+        <input type="text" id="height" name="height" />
+      </div>
+      <br />
+      <div>
+        <label for="base">Base: </label>
+        <input type="text" id="base" name="base" />
+      </div>
+      <br />
+      <div>
+        <button type="submit">Calculate</button>
+      </div>
+    </form>
+  </body>
+</html>
